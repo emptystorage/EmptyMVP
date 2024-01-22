@@ -1,0 +1,19 @@
+using EmptyMVP;
+
+#ROOTNAMESPACEBEGIN#
+	public class #SCRIPTNAME#Model : IModel
+	{
+		public void Dispose()
+		{
+			#NOTRIM#
+		}
+	}
+	
+	public class #SCRIPTNAME#Presentor : BasePresentor<View, #SCRIPTNAME#Model>
+	{
+		protected override void OnDispose()
+		{
+			#NOTRIM#
+		}
+	}
+#ROOTNAMESPACEEND#
