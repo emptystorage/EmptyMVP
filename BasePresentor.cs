@@ -6,6 +6,12 @@ namespace EmptyMVP
         where V : class, IView
         where M : class, IModel
     {
+        public BasePresentor(V view, M model)
+        {
+            View = view;
+            Model = model;
+        }
+
         public V View { get; }
 
         public M Model { get; }
