@@ -7,9 +7,9 @@ namespace EmptyMVP
         [MenuItem("Assets/Create/EmptyMVP/New Presentor", priority = 10)]
         public static void CreateNewPresentorClass()
         {
-            string presentorTemplatePath = "Assets/EmptyMVP/Editor/EmptyMVP_NewPresentor.cs.txt";
+            string path = "Assets/EmptyMVP/Editor/EmptyMVP_NewPresentor.cs.txt";
 
-            ProjectWindowUtil.CreateScriptAssetFromTemplateFile(presentorTemplatePath, "NewPresentor.cs");
+            ProjectWindowUtil.CreateScriptAssetFromTemplateFile(path, "NewPresentor.cs");
         }
     }
 }

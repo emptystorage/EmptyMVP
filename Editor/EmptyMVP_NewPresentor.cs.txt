@@ -2,7 +2,7 @@ using System;
 using EmptyMVP;
 
 #ROOTNAMESPACEBEGIN#
-	public class #SCRIPTNAME#Model : IModel
+	public sealed class #SCRIPTNAME#Model : IModel
 	{
 		public void Dispose()
 		{
@@ -10,7 +10,7 @@ using EmptyMVP;
 		}
 	}
 	
-	public class #SCRIPTNAME#Presentor : BasePresentor<View, #SCRIPTNAME#Model>
+	public sealed class #SCRIPTNAME#Presentor : BasePresentor<View, #SCRIPTNAME#Model>
 	{
 		public BasePresentor(View view, #SCRIPTNAME#Model model) : base(view, model) {}
 
