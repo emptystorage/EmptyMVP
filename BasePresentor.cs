@@ -12,9 +12,8 @@ namespace EmptyMVP
             Model = model;
         }
 
-        public V View { get; }
-
-        public M Model { get; }
+        protected V View { get; }
+        protected M Model { get; }
 
         public void Dispose()
         {

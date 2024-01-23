@@ -6,7 +6,5 @@ namespace EmptyMVP
         where V : class, IView
         where M : class, IModel
     {
-        V View { get; }
-        M Model { get; }
     }
 }
