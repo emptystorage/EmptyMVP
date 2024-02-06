@@ -12,7 +12,7 @@ using EmptyMVP;
 	
 	public sealed class #SCRIPTNAME#Presentor : BasePresentor<View, #SCRIPTNAME#Model>
 	{
-		public BasePresentor(View view, #SCRIPTNAME#Model model) : base(view, model) {}
+		public #SCRIPTNAME#Presentor(View view, #SCRIPTNAME#Model model) : base(view, model) {}
 
 		protected override void OnDispose()
 		{
